@@ -8,5 +8,7 @@
     <string name="documents">Documents</string>
     <string name="videos">Videos</string>
     <string name="images">Images</string>
+    <string name="menu_options_move">Move</string>
+    <string name="menu_options_move_group">Group Move</string>
 
 </resources>

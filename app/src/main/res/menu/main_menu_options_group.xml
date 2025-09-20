@@ -6,8 +6,7 @@
     <item
         android:id="@+id/action_export"
         android:icon="@drawable/ic_move_group"
-        android:title="Search"
-        android:contentDescription="Open search"
+        android:title="@string/menu_options_move_group"
         app:showAsAction="ifRoom|collapseActionView" />
 
 </menu>

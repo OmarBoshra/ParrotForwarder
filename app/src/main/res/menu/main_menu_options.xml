@@ -2,12 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- Search action -->
+    <!-- Move action -->
     <item
         android:id="@+id/action_export"
         android:icon="@drawable/ic_move"
-        android:title="Search"
-        android:contentDescription="Open search"
+        android:title="@string/menu_options_move"
         app:showAsAction="ifRoom|collapseActionView" />
 
 </menu>
