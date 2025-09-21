@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fileListItem"
+    android:layout_height="56dp"
+    android:layout_width="match_parent"
+    android:paddingVertical="8dp"
+    android:orientation="horizontal"
+    android:background="?attr/selectableItemBackground">
+
+        <!-- File Icon -->
+        <ImageView
+            android:id="@+id/fileIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="16dp"
+            android:src="@drawable/ic_docs" />
+
+        <!-- File Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:id="@+id/fileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Example.txt"
+                android:ellipsize="end"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+
+        <!-- Details Button -->
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.IconButton"
+            android:id="@+id/detailsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="16dp"
+            app:icon="@drawable/ic_selector_info"
+            android:duplicateParentState="true"
+            android:contentDescription="@string/view_details" />
+</LinearLayout>

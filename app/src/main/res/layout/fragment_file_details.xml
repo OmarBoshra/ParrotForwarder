@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Material3.BottomSheet.Modal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="@dimen/bottom_sheet_margin_horizontal"
+    android:layout_marginEnd="@dimen/bottom_sheet_margin_horizontal"
+    android:layout_marginTop="@dimen/bottom_sheet_margin_top"
+    android:maxWidth="@dimen/bottom_sheet_max_width">
+
+    <!-- Drag handle -->
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+        android:id="@+id/drag_handle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--File Review-->
+
+    <!-- File header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:id="@+id/playlist_cover"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_docs"
+            android:layout_marginEnd="16dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:id="@+id/playlist_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Document.pdf" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Options-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--Divider-->
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="4dp"
+            style="@style/Widget.Material3.MaterialDivider" />
+        <!-- File type -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:orientation="horizontal">
+
+            <!-- Action list -->
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="FileType" />
+
+
+        </LinearLayout>
+        <!-- File size -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:orientation="horizontal">
+
+            <!-- Action list -->
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="File size" />
+
+
+        </LinearLayout>
+        <!-- Last Modified -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:orientation="horizontal">
+
+            <!-- Action list -->
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Last Modified" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
