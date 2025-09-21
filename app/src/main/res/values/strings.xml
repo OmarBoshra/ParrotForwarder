@@ -10,5 +10,6 @@
     <string name="images">Images</string>
     <string name="menu_options_move">Move</string>
     <string name="menu_options_move_group">Group Move</string>
+    <string name="no_items_to_display">no_items_to_display</string>
 
 </resources>

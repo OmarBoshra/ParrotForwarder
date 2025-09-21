@@ -12,7 +12,7 @@
         android:id="@+id/top_app_bar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:title="@string/forwarded_directory"
+        app:title="@string/forwarded_directory"
         app:navigationIcon="@drawable/ic_appbar_navigation"
         android:visibility="visible"
         style="@style/Widget.Material3.Toolbar" />
