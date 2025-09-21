@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ParrotForwarder</string>
+    <string name="forwarded_directory">Forwarded directory</string>
+    <string name="move">Move</string>
+    <string name="options">Options</string>
+    <string name="view_details">View details</string>
+    <string name="downloads">Downloads</string>
+    <string name="documents">Documents</string>
+    <string name="videos">Videos</string>
+    <string name="images">Images</string>
+
+</resources>
