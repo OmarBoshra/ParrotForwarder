@@ -1,4 +1,6 @@
 <resources>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string name="app_name">ParrotForwarder</string>
     <string name="forwarded_directory">Forwarded directory</string>
     <string name="move">Move</string>
@@ -10,6 +12,11 @@
     <string name="images">Images</string>
     <string name="menu_options_move">Move</string>
     <string name="menu_options_move_group">Group Move</string>
-    <string name="no_items_to_display">no_items_to_display</string>
+    <string name="no_items_to_display">Empty directory</string>
+    <!-- Error dialog   -->
+    <string name="error_dialog_header">Processing failed</string>
+    <string name="error_dialog_body">We couldn\'t load the content you were looking for, Please try again.</string>
+    <string name="error_dialog_action_cancel">Cancel</string>
+    <string name="error_dialog_action_retry">Retry</string>
 
 </resources>

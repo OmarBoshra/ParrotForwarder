@@ -1,5 +1,5 @@
 <resources>
-    
+    <!-- File manager -->
     <!-- res/values-w640dp/dimens.xml -->
     <dimen name="bottom_sheet_margin_top">56dp</dimen>
     <dimen name="bottom_sheet_margin_horizontal">56dp</dimen>
