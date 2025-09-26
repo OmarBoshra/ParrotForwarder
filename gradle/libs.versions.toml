@@ -42,6 +42,10 @@ hilt = "2.51.1"
 okhttp = "5.0.0-alpha.14"
 navigationDynamicFeaturesFragmentVersion = "2.7.7"
 coil = "2.6.0"
+mammoth = "1.9.0"
+flexmarkAll = "0.64.8"
+poiOoxml = "5.4.1"
+timber = "5.0.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -80,6 +84,10 @@ circleimageview = { group = "de.hdodenhof", name = "circleimageview", version.re
 okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
 navigation-dynamic-features-fragment = { group = "androidx.navigation", name = "navigation-dynamic-features-fragment", version.ref = "navigationDynamicFeaturesFragmentVersion" }
 coil = { group = "io.coil-kt", name = "coil", version.ref = "coil" }
+mammoth = { group = "org.zwobble.mammoth", name = "mammoth", version.ref = "mammoth" }
+flexmark-all = { group = "com.vladsch.flexmark", name = "flexmark-all", version.ref = "flexmarkAll" }
+poi-ooxml = { group = "org.apache.poi", name = "poi-ooxml", version.ref = "poiOoxml" }
+timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "timber" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

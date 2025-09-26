@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dinner_app_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/meal_categories"
+        android:name="com.example.parrot.presentation.features.meal_categories.MealCategoriesFragment"
+        android:label="Meal categories List"
+        tools:layout="@layout/fragment_meal_categories">
+
+        <action
+            android:id="@+id/action_MealCategoriesFragment_to_DrinkCategoriesFragment"
+            app:destination="@id/drink_categories">
+            <argument
+                android:name="mealCategoryName"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/drink_categories"
+        android:name="com.example.parrot.presentation.features.drink_categories.DrinkCategoriesFragment"
+        android:label="Drink categories List"
+        tools:layout="@layout/fragment_drink_categories">
+        <argument
+            android:name="mealCategoryName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_DrinkCategoriesFragment_to_DinnerFragment"
+            app:destination="@id/dinner">
+            <argument
+                android:name="mealCategoryName"
+                app:argType="string" />
+            <argument
+                android:name="drinkCategoryName"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/dinner"
+        android:name="com.example.parrot.presentation.features.dinner.DinnerFragment"
+        android:label="Dinner"
+        tools:layout="@layout/fragment_dinner">
+        <argument
+            android:name="mealCategoryName"
+            app:argType="string" />
+        <argument
+            android:name="drinkCategoryName"
+            app:argType="string" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.parrot.presentation.features.home.HomeFragment"
+        android:label="Home Page"
+        tools:layout="@layout/fragment_home">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/progress_page"
+        android:name="com.example.parrot.presentation.features.datasanitization.ProcessingFragment"
+        android:label="Progressing page"
+        tools:layout="@layout/fragment_processing">
+        <action
+            android:id="@+id/action_ProgressingFragment_to_HomeFragment"
+            app:destination="@id/home">
+        </action>
+    </fragment>
+
+</navigation>

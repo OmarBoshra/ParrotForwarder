@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dinner_app_graph"
+    app:startDestination="@id/progress_page">
+
+    <fragment
+        android:id="@+id/progress_page"
+        android:name="com.example.parrot.presentation.features.datasanitization.ProcessingFragment"
+        android:label="Progressing page"
+        tools:layout="@layout/fragment_processing">
+        <argument
+            android:name="shareIntent"
+            app:argType="android.content.Intent" />
+        <action
+            android:id="@+id/action_ProgressingFragment_to_HomeFragment"
+            app:destination="@id/home">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.parrot.presentation.features.home.HomeFragment"
+        android:label="Home Page"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+
+</navigation>
