@@ -18,7 +18,36 @@
         tools:targetApi="31">
         <activity
             android:name=".presentation.activities.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:launchMode="singleTask"
+            >
+
+            <!-- Share targets -->
+            <!-- Single file share -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <!-- Word -->
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                <!-- Excel -->
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                <!-- Excel (XLS) -->
+                <data android:mimeType="application/vnd.ms-excel" />
+                <!-- PNG -->
+                <data android:mimeType="image/png" />
+            </intent-filter>
+
+            <!-- Multiple files share -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                <data android:mimeType="application/vnd.ms-excel" />
+                <data android:mimeType="image/png" />
+            </intent-filter>
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
