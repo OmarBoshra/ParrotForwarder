@@ -48,6 +48,20 @@ android {
     kapt {
         correctErrorTypes = true
     }
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1,LGPL-3.0.txt}" // Common general exclusions
+            // Specific exclusion for your error:
+            excludes += "META-INF/LICENSE-LGPL-3.txt"
+            excludes += "META-INF/LICENSE-W3C-TEST"
+            excludes += "META-INF/LICENSE-LGPL-2.1.txt"
+
+            // Add the new exclusion for META-INF/DEPENDENCIES
+            excludes += "META-INF/DEPENDENCIES"
+            // Alternatively, you can use pickFirst if you are sure any version of the file is fine
+            // pickFirsts += "META-INF/LICENSE-LGPL-3.txt"
+        }
+    }
 }
 
 dependencies {
@@ -73,8 +87,12 @@ dependencies {
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.okhttp)
     implementation(libs.navigation.dynamic.features.fragment)
+    implementation(libs.mammoth)
+    implementation(libs.flexmark.all)
+    implementation(libs.poi.ooxml)
 
-
+    // Timber
+    implementation(libs.timber)
     // Dependency injection
     // Hilt
     kapt(libs.hilt.compiler)
