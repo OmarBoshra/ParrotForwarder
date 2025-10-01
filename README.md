@@ -9,14 +9,10 @@
 
   
 ## Tech Stack
-Please utilize them as much as possible:
-- MVVM + Repository
+
+- MVI
 - Kotlin Flow
 - Dagger Hilt (Dependency Injection)
-- Retrofit (Networking)
 - Navigation Component
 - ktlint (Code Linting)
-
-
-### Optional
-- Epoxy (RecyclerView)
+- Epoxy
